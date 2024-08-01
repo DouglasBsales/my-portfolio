@@ -31,7 +31,7 @@ export const TecnologiasUtilizadas = () => {
                   <Image src="/html.png" alt="" width={73} height={73} />
                 </div>
                 <div className="w-[105px] h-[102px] flex justify-center items-center bg-[#fff] rounded-md shadow-md drop-shadow-xl">
-                  <Image src="/JavaScript.png" alt="" width={84} height={84} />
+                  <Image src="/javaScript.png" alt="" width={84} height={84} />
                 </div>
               </div>
               <div className="flex flex-col justify-center gap-[54px]">
