@@ -8,7 +8,7 @@ export const Servicos = () => {
           <p className="text-[70px] text-blackPrimary font-semibold ">
             Serviços
           </p>
-          <div className="w-full pt-[78px] flex gap-[60px] justify-center border">
+          <div className="w-full pt-[78px] flex gap-[60px] justify-center">
             <div className="w-[283px] h-[237px] bg-[#fff] rounded-[10px] py-5 px-5">
               <div className="w-[75px] h-[52px] flex justify-end gap-[2px] py-1 px-1 rounded-md border border-blackPrimary">
                 <div className="w-[6px] h-[6px] bg-[#D9D9D9] rounded-full"></div>
