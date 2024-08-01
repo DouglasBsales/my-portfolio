@@ -1,5 +1,6 @@
 import { GlobalContext } from "@/context/GlobalContext";
 import { Mail } from "lucide-react";
+import Link from "next/link";
 import { useContext } from "react";
 
 export const Header = () => {
@@ -32,11 +33,11 @@ export const Header = () => {
           <p className={`cursor-pointer hover:text-blackPrimary ${stateMenu === "Sobre mim" ? "text-blackprimary border-b border-blackPrimary pb-4 " : "text-blackSecondary pb-4 "}`}>Sobre mim</p>
           <p className={`cursor-pointer hover:text-blackPrimary ${stateMenu === "Portfolio" ? "text-blackprimary border-b border-blackPrimary pb-4 " : "text-blackSecondary pb-4"}`}>Portfólio</p>
           <p className={`cursor-pointer hover:text-blackPrimary ${stateMenu === "Serviços" ? "text-blackprimary border-b border-blackPrimary pb-4 " : "text-blackSecondary pb-4"}`}>Serviços</p>
-          <button className="w-[200px] flex items-center justify-center gap-[10px] text-blackSecondary border-2 border-blackSecondary rounded-md mb-4 hover:bg-blackPrimary
+          <Link href="https://wa.me/5581983312158?text=" target="_blank" className="w-[200px] flex items-center justify-center gap-[10px] text-blackSecondary border-2 border-blackSecondary rounded-md mb-4 hover:bg-blackPrimary
            hover:border-blackPrimary hover:text-[#fff]">
             <p className="py-[10px]">Entre em contato</p>
             <Mail/>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
