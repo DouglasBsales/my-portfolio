@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export const CardFincanceApp = () => {
   return (
-    <div className="w-full flex justify-between pt-[72px]">
-      <div className="w-[50%] h-[670px] flex items-center">
-        <div className="w-[473px]">
+    <div className="w-full flex flex-col justify-between pt-[72px] xl:flex-row">
+      <div className="w-full xl:h-[670px] flex justify-center items-center xl:w-[50%] xl:justify-start">
+        <div className="w-full sm:w-[473px] ">
           <p className="text-5xl text-blackPrimary font-semibold">
             Finance-app
           </p>
@@ -23,41 +23,42 @@ export const CardFincanceApp = () => {
             <Link
               href="https://github.com/DouglasBsales/finance-app"
               target="_blank"
-              className="w-[269px] h-[60px] flex items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md
+              className="w-[269px] flex py-3 items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md
               hover:text-[#fff] hover:bg-blackPrimary
               "
             >
-              <p className="text-2xl">Repositório</p>
+              <p className="text-xl sm:text-2xl">Repositório</p>
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </Link>
             <Link
               href="https://finance-app-nu-self.vercel.app/Login"
               target="_blank"
-              className="w-[269px] h-[60px] flex items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md hover:text-[#fff] hover:bg-blackPrimary"
+              className="w-[269px] flex items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md hover:text-[#fff] hover:bg-blackPrimary"
             >
-              <p className="text-2xl">Acesse</p>
+              <p className="text-xl sm:text-2xl">Acesse</p>
               <ScreenShare size={22} />
             </Link>
           </div>
         </div>
       </div>
-      <LineCenter />
-      <div className="w-[50%] h-[670px]">
-        <div className="flex justify-center gap-3">
-          <div>
+      <div className="hidden xl:block">
+        <LineCenter />
+      </div>
+      <div className="w-full h-[670px] xl:w-[50%]">
+        <div className="flex justify-center gap-3 pt-5 xl:pt-0">
+          <div className="flex flex-col lg:flex-row">
             <Image
               src="/FINANCE-APP IMG MOCKUP.png"
               alt="mockup-iphone"
               width={326}
               height={561}
             />
-          </div>
-          <div className="pt-[87px]">
             <Image
               src="/FINANCE-APP-IMG-MOCKUP.png"
               alt="mockup-iphone"
               width={310}
               height={561}
+              className="pt-[87px]"
             />
           </div>
         </div>

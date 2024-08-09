@@ -15,7 +15,7 @@ export default function GlobalContextProvider({ children }: GlobalContextProvide
 
 
     return (
-        <GlobalContext.Provider value={{stateMenu}}>
+        <GlobalContext.Provider value={{ stateMenu , setStateMenu}}>
             {children}
         </GlobalContext.Provider>
     );

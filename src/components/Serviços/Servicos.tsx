@@ -1,14 +1,12 @@
-import { Settings } from "lucide-react";
-
 export const Servicos = () => {
   return (
-    <div className="w-full pt-[50px]">
-      <div className=" w-full h-[546px] flex justify-center bg-[#67B1B826] ">
+    <div className="w-full pt-[700px] xl:pt-[70px]" id="servicos">
+      <div className=" w-full xl:h-[546px] flex justify-center bg-[#67B1B826] px-5 pb-14 xl:pb-0">
         <div className="max-w-[1440px] w-full flex flex-col pt-[50px]">
           <p className="text-[70px] text-blackPrimary font-semibold ">
             Serviços
           </p>
-          <div className="w-full pt-[78px] flex gap-[60px] justify-center">
+          <div className="w-full pt-[78px] flex flex-wrap gap-[60px] justify-center">
             <div className="w-[283px] h-[237px] bg-[#fff] rounded-[10px] py-5 px-5">
               <div className="w-[75px] h-[52px] flex justify-end gap-[2px] py-1 px-1 rounded-md border border-blackPrimary">
                 <div className="w-[6px] h-[6px] bg-[#D9D9D9] rounded-full"></div>
@@ -59,10 +57,11 @@ export const Servicos = () => {
                   </div>
                   <div>
                     <p className="pt-3 text-2xl text-blackPrimary font-semibold">
-                    Desenvolvimento
+                      Desenvolvimento
                     </p>
                     <p className="pt-3 text-blackPrimary text-sm">
-                    Sistemas em geral, landing pages, web-apps e aplicativos.O layout do desenvolvimento está incluso no serviço.
+                      Sistemas em geral, landing pages, web-apps e aplicativos.O
+                      layout do desenvolvimento está incluso no serviço.
                     </p>
                   </div>
                 </div>
