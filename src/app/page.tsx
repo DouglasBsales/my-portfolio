@@ -2,13 +2,18 @@
 
 import { Header } from "@/components//Home/Header";
 import { EnvieUmaMensagem } from "@/components/EnvieUmaMensagem/EnvieUmaMensagem";
+import { MenuMobile } from "@/components/Home/MenuMobile";
 import { Principal } from "@/components/Home/Principal";
 import { Portfolio } from "@/components/Portfolio/Portfolio";
 import { Servicos } from "@/components/Serviços/Servicos";
 import { SobreMim } from "@/components/SobreMim/SobreMin";
 import { TecnologiasUtilizadas } from "@/components/Tecnologias/TecnologiasUtilizadas";
+import { GlobalContext } from "@/context/GlobalContext";
+import { useContext } from "react";
 
 export default function Home() {
+  const { showMenuMobile } = useContext(GlobalContext);
+
   return (
     <div className="w-full h-screen ">
       <div className="w-full flex justify-center fixed top-0 z-20 shadow-md bg-white">
@@ -22,7 +27,10 @@ export default function Home() {
           <SobreMim />
         </div>
         <TecnologiasUtilizadas />
-        <div className="max-w-[1440px] w-full flex flex-col pt-[130px] px-5" id="portfolio">
+        <div
+          className="max-w-[1440px] w-full flex flex-col pt-[130px] px-5"
+          id="portfolio"
+        >
           <Portfolio />
         </div>
         <div className="hidden xl:flex flex-col items-center px-5">
@@ -32,9 +40,10 @@ export default function Home() {
         </div>
         <Servicos />
         <div className="max-w-[1440px] w-full flex flex-col px-5">
-        <EnvieUmaMensagem />
+          <EnvieUmaMensagem />
+        </div>
       </div>
-      </div>
+      <MenuMobile />
     </div>
   );
 }

@@ -11,6 +11,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Douglas sales - Desenvolvedor",
   description: "Desenvolvedor Front-end & mobile",
+  icons:{
+    icon: '/files.svg'
+  }
 };
 
 export default function RootLayout({
