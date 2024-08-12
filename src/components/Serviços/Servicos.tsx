@@ -1,7 +1,7 @@
 export const Servicos = () => {
   return (
-    <div className="w-full pt-[700px] xl:pt-[70px]" id="servicos">
-      <div className=" w-full xl:h-[546px] flex justify-center bg-[#67B1B826] px-5 pb-14 xl:pb-0">
+    <div className="w-full pt-[700px] xl:pt-[70px]" >
+      <div className=" w-full xl:h-[546px] flex justify-center bg-[#67B1B826] px-5 pt-14 pb-14 xl:pb-0" id="servicos">
         <div className="max-w-[1440px] w-full flex flex-col pt-[50px]">
           <p className="text-[70px] text-blackPrimary font-semibold ">
             Serviços

@@ -23,7 +23,7 @@ export const CardFincanceApp = () => {
             <Link
               href="https://github.com/DouglasBsales/finance-app"
               target="_blank"
-              className="w-[269px] flex py-3 items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md
+              className="w-[269px] flex py-3 px-3 items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md
               hover:text-[#fff] hover:bg-blackPrimary
               "
             >

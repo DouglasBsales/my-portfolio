@@ -46,7 +46,7 @@ export const CardBarberSoftware = () => {
             <Link
               href="https://github.com/DouglasBsales/barber-software"
               target="_blank"
-              className="w-[269px] py-3 flex items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md
+              className="w-[269px] py-3 px-3 flex items-center justify-center gap-[10px] text-blackPrimary bg-transparent border border-blackPrimary rounded-md
               hover:text-[#fff] hover:bg-blackPrimary
               "
             >
